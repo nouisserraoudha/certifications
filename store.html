@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Certifs</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Bitter">
+
+        <style>
+           
+            header{
+                padding:4em 3em 1.75em 4em;
+                height:300px;
+
+            }
+            header img{
+                height:100px;
+                width :100px;
+                border-radius:100px;
+            }
+            .btn {
+                
+                border-radius: 40px;
+                background-color: #888888;
+                width:40px;
+                height: 40px;
+            }
+            .media a{
+                font-size:20px;
+            }
+            section{
+                padding: 1em 2em ;
+            }
+            .certif{
+                 width:100%;
+                 height:100px;
+                 border:4px solid gray;
+                 margin-top: 3px;
+             }
+
+          
+            html, body {
+                height: 100%;
+            }
+
+            .full-height {
+                height: 100%;
+            }
+           
+           
+           
+
+           
+            @media(max-width:992px){
+                #viwer img{
+                margin-top: 100px;
+            }
+            }
+            @media(max-width:768px){
+                #viewer{
+                    display: none;
+
+                }
+                
+                .certif{
+                    height:300px;
+                }
+                
+                .not-active {
+                pointer-events: none;
+                cursor: default;
+                
+                }
+               
+            }
+            @media(min-width:768px){
+                #viwer img{
+                width:90%;
+                box-shadow: 15px 15px 25px 10px #888888 ;
+            }
+                #viwer{
+                position: absolute;
+                top:0;
+                left:0;
+                width:60%;
+                padding:50px 10px;
+                background-color:rgb(224, 218, 223);
+                background-size: cover;
+                
+            }
+            #main{
+                width:40%;
+                position: fixed;
+                right:0;
+                top:0;
+                background-color:rgb(240, 196, 230);
+                overflow-y: scroll;
+            }
+            }
+            
+            
+
+        </style>
+    </head>
+    <body>
+        <div id="main" class="full-height">
+            <header>
+                <div style="text-align: center" >
+                    <img src="https://avatars2.githubusercontent.com/u/14887782?s=460&v=4" >
+                           
+                </div>
+                <div style="text-align: center"  ><h3 style="font-family: 'Bitter'; font-weight:600; color: #CC3300 ">Raoudha Nouisser</h3></div>
+                
+                <div style="text-align: right">
+                        <div class="media" style="margin-top:20px">
+                                <a class="btn btn-default" href="https://twitter.com/raoudhanouisser"><i class="fa fa-twitter "></i></a>
+                                <a class="btn btn-default" href="https://www.facebook.com/rawdha.nouisser.1"><i class="fa fa-facebook "></i></a>
+                                <a class="btn btn-default " href="https://tn.linkedin.com/in/raoudha-nouisser-671591109"><i class="fa fa-linkedin "></i></a>
+                                <a class="btn btn-default" href="https://github.com/nouisserraoudha"><i class="fa fa-github-square "></i></a>
+                        </div>
+                </div>
+
+            </header>
+            <section class="full-height">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6"><a href="#" class="not-active" onclick="zooming(0)"><img class="certif "  src="i1.jpg"/></a></div>
+                    <div class="col-md-4 col-sm-6"><a href="#" class="not-active" onclick="zooming(1)"><img class="certif "  src="i2.jpg"/></a></div>
+                    <div class="col-md-4 col-sm-6"><a href="#" class="not-active" onclick="zooming(2)"><img class="certif"  src="i3.jpg"/></a></div>
+                    <div class="col-md-4 col-sm-6"><a href="#" class="not-active" onclick="zooming(3)"><img class="certif"  src="i4.jpg"/></a></div>
+                    <div class="col-md-4 col-sm-6"><a href="#" class="not-active" onclick="zooming(4)"><img class="certif"  src="i5.jpg"/></a></div>
+                    <div class="col-md-4 col-sm-6"><a href="#" class="not-active" onclick="zooming(5)"><img class="certif"  src="i6.jpg"/></a></div>
+                    <div class="col-md-4 col-sm-6"><a href="#" class="not-active" onclick="zooming(6)"><img class="certif"  src="i7.jpg"/></a></div>
+                    <div class="col-md-4 col-sm-6"><a href="#" class="not-active" onclick="zooming(7)"><img class="certif"  src="i8.jpg"/></a></div>
+                    <div class="col-md-4 col-sm-6"><a href="#" class="not-active" onclick="zooming(8)"><img class="certif"  src="i9.jpg"/></a></div>
+
+                </div>
+            </section>
+
+        </div>
+        <div id="viwer" class="full-height">   
+            <ul>
+                <li><img src="i1.jpg"/></li>
+                <li><img src="i2.jpg"/></li>
+                <li><img src="i3.jpg"/></li>
+                <li><img src="i4.jpg"/></li>
+                <li><img src="i5.jpg"/></li>
+                <li><img src="i6.jpg"/></li>
+                <li><img src="i7.jpg"/></li>
+                <li><img src="i8.jpg"/></li>
+                <li><img src="i9.jpg"/></li>
+            </ul>
+               
+
+        </div>
+
+        <!-- Javascript de Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+        <script>
+
+            
+            var x= document.querySelectorAll('.certif');
+            var y=document.querySelectorAll('ul > li');
+            
+            
+
+            for (var i=0; i<y.length; i++){
+                y[i].style.display="none";
+            }
+            x[0].style.border = "4px solid #CC3300";
+            y[0].style.display='block';
+           
+           
+
+           function zooming(el){
+            for (var i=0; i<y.length; i++){
+               y[i].style.display="none";
+               x[i].style.border = "4px solid gray";
+               }
+               y[el].style.display='block';
+              x[el].style.border = "4px solid #CC3300";
+           }
+        </script>
+    </body>
+</html>
